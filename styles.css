@@ -1,5 +1,142 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: "Lora", serif;
+  background-color: #f0edcc;
+  color: #02343f;
+}
+header {
+  width: 100%;
+  height: 193px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+header h1 {
+  font-size: 40px;
+}
+.blindHeader {
+  display: none;
+}
+.slideWrap {
+  width: 100%;
+  background-color: #02343f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: #f0edcc;
+}
+.sm_title {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+.slideWrap__img {
+  max-width: 1120px;
+}
+.slideWrap__img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.slideWrap .indicator {
+  display: flex;
+}
+.slideWrap .indicator a {
+  display: block;
+  text-indent: -9999em;
+  width: 10px;
+  height: 10px;
+  background-color: #f0edcc;
+  border-radius: 50%;
+  margin: 10px 5px 5px;
+}
+.works__link-img {
+  width: 550px;
+  height: 600px;
+  border-radius: 10px;
+}
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.work-container .works {
+  max-width: 1120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.work-container .works article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.work-container .works article h3 {
+  margin: 5px 0;
+}
+footer {
+  width: 100%;
+  background-color: #02343f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: #f0edcc;
+}
+@media (max-width: 1119px) {
+  .work-container .works {
+    flex-direction: column;
+  }
+  .work-container .works article {
+    margin-bottom: 50px;
+  }
+  .slideWrap__img {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  header {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  header h1 {
+    display: none;
+  }
+  .blindHeader {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .sm_title {
+    font-size: 20px;
+  }
+  .slideWrap .indicator a {
+    width: 6px;
+    height: 6px;
+  }
+  .works__link-img {
+    width: 300px;
+    height: 360px;
+  }
+  .work-container .works article h3 {
+    font-size: 16px;
+  }
+  .work-container .works article p {
+    font-size: 14px;
+  }
 }
