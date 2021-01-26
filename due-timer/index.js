@@ -15,10 +15,10 @@ function getTime() {
   const minutes = minutesInMs % 60;
   const hours = hoursInMs % 24;
 
-  const daysStr = `${days < 10 ? `0${days}` : days}d`;
-  const hoursStr = `${hours < 10 ? `0${hours}` : hours}h`;
-  const minutesStr = `${minutes < 10 ? `0${minutes}` : minutes}m`;
-  const secondsStr = `${seconds < 10 ? `0${seconds}` : seconds}s`;
+  const daysStr = `${days < 10 ? `0${days}` : days}일`;
+  const hoursStr = `${hours < 10 ? `0${hours}` : hours}시`;
+  const minutesStr = `${minutes < 10 ? `0${minutes}` : minutes}분`;
+  const secondsStr = `${seconds < 10 ? `0${seconds}` : seconds}초`;
 
   clockContainer.innerText = `${daysStr} ${hoursStr} ${minutesStr} ${secondsStr}`;
 }
