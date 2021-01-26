@@ -173,7 +173,7 @@ button {
 .googleBtn {
   background-color: rgb(255, 136, 0);
 }
-@media (max-width: 764px) {
+@media (max-width: 780px) {
   header {
     height: 40px;
   }
