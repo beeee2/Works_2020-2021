@@ -91,6 +91,10 @@ main h2 {
 .featured-book {
   display: flex;
 }
+.featured-book img {
+  width: 115px;
+  height: 170px;
+}
 
 .featured-book__cover {
   width: 110px;
@@ -205,6 +209,7 @@ main h2 {
 
 .popular img {
   width: 140px;
+  height: 170px;
   border-radius: 5px;
   margin-right: 20px;
 }
