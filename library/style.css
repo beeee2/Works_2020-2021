@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #ecf0f1;
+  position: relative;
+}
+
+header {
+  background: rgb(44, 62, 80);
+  color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 15px;
+  padding-bottom: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 3px 14px 28px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header > * {
+  width: 33%;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 600;
+}
+
+header i:last-child {
+  text-align: right;
+}
+
+.search {
+  width: 95%;
+  position: relative;
+  top: -30px;
+  margin: 0 auto;
+}
+
+input {
+  background-color: white;
+  width: 100%;
+  border: none;
+  padding: 15px 25px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+  opacity: 0.7;
+}
+
+.search i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 25px 15px 0;
+  background-color: white;
+  position: relative;
+  top: -47px;
+  z-index: -1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 3px 14px 28px rgba(0, 0, 0, 0.1), 3px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.featured-book {
+  display: flex;
+}
+
+.featured-book__cover {
+  width: 110px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.featured-book__data {
+  width: 100%;
+}
+
+.featured-book__title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.featured-book__author {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.3;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.featured-book__rating {
+  color: #fdcc32;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.featured-book__rating i:last-child {
+  color: #f7f7f7;
+}
+
+.featured-book__tags {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.featured-book__tag {
+  background: #ecf0f1;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 10px 10px;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(44, 62, 80, 0.1);
+}
+.featured-book__tag:nth-child(1) {
+  margin-right: 10px;
+}
+.featured-book__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured-book__bookmark {
+  background-color: #fdcc32;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.featured-book__book {
+  background: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 40px;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(44, 62, 80, 0.1);
+}
+
+.top-books {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding-bottom: 15px;
+}
+
+.top-books__book {
+  margin-right: 20px;
+}
+
+.top-books__book img {
+  width: 68px;
+  height: 100px;
+  border-radius: 3px;
+}
+
+.top-books__rating {
+  color: #fdcc32;
+  font-size: 8px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.popular {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.popular img {
+  width: 140px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.popular__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.popular__bio {
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 1.2;
+}
