@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+  height: 100vh;
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(26, 188, 156, 0.8);
+}
+h1 {
+  text-shadow: 3px 3px 10px rosybrown;
+}
+h2 {
+  text-shadow: 3px 3px 5px rgba(28, 70, 109, 0.7);
+}
