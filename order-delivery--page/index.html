@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문정보 및 배송정보 페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <!-- 주문정보 -->
+            <fieldset>
+                <legend>주문정보</legend>
+            <!-- 필드셋이 그룹화를 시키고 legend가 그룹화된 틀 위에 올라간다. -->
+                <div class="list">
+                    <label for="orderName" class="field">이름</label>
+                    <input type="text" id="orderName">
+                </div>
+                <div class="list">
+                    <label for="orderTel" class="field">연락처</label>
+                    <input type="tel" id="orderTel">
+                </div>
+                <div class="list">
+                    <label for="orderAddress" class="field">주소</label>
+                    <input type="text" id="orderAddress">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>배송정보</legend>
+                <div class="list">
+                    <input type="checkbox" id="deliveryInfo">
+                    <label for="deliveryInfo">주문정보와 배송정보가 같습니다.</label>
+                </div>
+                <div class="list">
+                    <label for="deliveryName" class="field">이름</label>
+                    <input type="text" id="deliveryName">
+                </div>
+                <div class="list">
+                    <label for="deliveryTel" class="field">연락처</label>
+                    <input type="tel" id="deliveryTel">
+                </div>
+                <div class="list">
+                    <label for="deliveryAddress" class="field">주소</label>
+                    <input type="text" id="deliveryAddress">
+                </div>
+            </fieldset>
+            <!-- 결제버튼 -->
+            <button type="submit">결제하기</button>
+        </form>
+    </div>
+</body>
+</html>
