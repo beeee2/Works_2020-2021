@@ -95,6 +95,7 @@ header h1 {
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 .work-container .works article h3 {
   margin: 5px 0;

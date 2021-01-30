@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문 페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="orderContainer">
+        <h1>피자 주문하기</h1>
+        <form action="">
+            <fieldset>
+                <legend>사이즈</legend>
+                <div class="size">
+                    <input type="checkbox" value="24000" id="size--L">
+                    <label for="size--L">Large<span>24,000</span></label>
+                </div>
+                <div class="size">
+                    <input type="checkbox" value="21000" id="size--M">
+                    <label for="size--M">Medium<span>21,000</span></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>추가 주문</legend>
+                <div class="sideOrder">
+                    <input type="checkbox" value="800" id="sideOrder--first">
+                    <label for="sideOrder--first">피클<span>800</span></label>
+                </div>
+                <div class="sideOrder">
+                    <input type="checkbox" value="300" id="sideOrder--second">
+                    <label for="sideOrder--second">칠리소스<span>300</span></label>
+                </div>
+                <div class="sideOrder">
+                    <input type="checkbox" value="200" id="sideOrder--third">
+                    <label for="sideOrder--third">디핑소스<span>200</span></label>
+                </div>
+                <div class="sideOrder">
+                    <input type="checkbox" value="4800" id="sideOrder--fourth">
+                    <label for="sideOrder--fourth">치즈스틱 4개<span>4,800</span></label>
+                </div>
+                <div class="sideOrder">
+                    <input type="checkbox" value="2400" id="sideOrder--fifth">
+                    <label for="sideOrder--fifth">콘샐러드<span>2400</span></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>합계</legend>
+                <p id="total">0</p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
