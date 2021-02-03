@@ -1,0 +1,174 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+address {
+  font-style: normal;
+}
+small {
+  font-size: 1em;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 헤더 */
+.header {
+  width: 1000px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+.header h1 {
+  height: 51px;
+  /* 이미지의 원래크기로 높이를 잡는다. */
+  padding-top: 54.5px;
+}
+.header .member {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.header .member li {
+  float: left;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.header .member li:last-child::before {
+  content: "|";
+  padding-right: 15px;
+}
+.header .lnb {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+}
+.header .lnb li {
+  float: left;
+  margin-left: 30px;
+  text-transform: uppercase;
+  /* 소문자를 대문자로 스타일 변경시켜준다. 음성인식에서는 그대로 영어단어째 이해한다. */
+}
+.header .lnb li a:hover {
+  color: orange;
+}
+
+/* 서브이미지 */
+.sub_img {
+  height: 160px;
+  background: url(img/sub_img.jpg) no-repeat center top/cover;
+}
+.sub_img span {
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: right;
+  line-height: 160px;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+/* 본문 */
+
+.contents {
+  width: 1000px;
+  margin: 30px auto 0;
+  overflow: hidden;
+}
+
+.submenu {
+  width: 250px;
+  float: left;
+}
+.submenu h2 {
+  width: 250px;
+  height: 95px;
+  background-color: #333;
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 95px;
+  text-transform: uppercase;
+}
+.submenu ul {
+  padding-top: 20px;
+}
+.submenu ul li a {
+  display: block;
+  height: 49px;
+  border-bottom: 1px solid navy;
+  line-height: 49px;
+  color: navy;
+  text-indent: 20px;
+  /* 텍스트 들여쓰기 속성 */
+  /* 혹은 
+  padding-left: 20px; */
+  background: url(img/snb_bullet.gif) no-repeat 230px center;
+}
+.submenu ul li a:hover {
+  background: url(img/snb_bullet_1.gif) no-repeat 230px center;
+  color: orange;
+}
+.subCon {
+  width: 710px;
+  float: right;
+}
+.subCon h3 {
+  font-family: "Times New Roman", Times, serif;
+  /* 명조체의 기본 글꼴은 serif로 넣으면 된다. */
+  color: #ccc;
+  font-size: 3rem;
+}
+.subCon figure {
+  float: right;
+  text-align: center;
+  color: gray;
+}
+.subCon p {
+  margin: 0 0 20px 10px;
+}
+.subCon p:last-child {
+  margin-bottom: 0;
+}
+/* footer */
+.footerWrap {
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+}
+.footerWrap {
+  width: 1000px;
+  overflow: hidden;
+  /* 하위 요소가 float 요소를 쓰기 위해서 부모요소가 지녀야하는 속성인것 같다. */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.footerWrap .left {
+  float: left;
+  font-size: 0.8em;
+}
+.footerWrap .sns {
+  float: right;
+}
+.footer .sns li {
+  float: left;
+}
+.footer .sns li a {
+  display: block;
+  width: 33px;
+  height: 33px;
+  margin-left: 20px;
+  background: url(img/bg_sns.png) no-repeat;
+  text-indent: -9999em;
+  /* 마이너스 값으로 넣게 되면 브라우저 바깥으로 나가게 된다. */
+}
+.footer .sns li:last-child a {
+  background-position: -50px 0;
+}

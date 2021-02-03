@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font: 16px "나눔고딕";
+  color: #333;
+  letter-spacing: -1px;
+}
+/* 헤더 */
+.header {
+  width: 1140px;
+  height: 90px;
+  margin: 0 auto;
+}
+.logo_img {
+  width: 197px;
+  height: 34px;
+  float: left;
+  margin: 28px 20px;
+}
+.logo_text {
+  float: left;
+  line-height: 90px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu_bar {
+  width: 800px;
+  float: right;
+  line-height: 90px;
+}
+
+.menu_bar li {
+  float: right;
+  margin: 0 20px;
+  line-height: 90px;
+}
+.menu_bar p {
+  float: right;
+  margin-right: 20px;
+  color: blue;
+}
+.menu_bar li a:hover {
+  color: blue;
+}
+
+/* 메인 */
+.main {
+  background-image: url("img/pc-cover-main.jpg");
+  width: 100%;
+  height: 654px;
+  margin: 0 auto;
+}
+.main_text {
+  text-align: center;
+  padding: 95px 0 75px 0;
+}
+.main_text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+.main_text h6 {
+  font-size: 18px;
+  color: white;
+  font-weight: lighter;
+}
+.main_box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.box {
+  width: 270px;
+  height: 270px;
+  float: left;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+.box_title {
+  margin: 55px 30px 30px 30px;
+}
+.box_title h2 {
+  float: left;
+}
+.box_title img {
+  float: right;
+}
+.box_mean {
+  clear: both;
+  padding: 30px;
+  font-size: 18px;
+}
+/* 콘텐츠 */
+.content {
+  width: 1320px;
+  margin: 0 auto;
+}
+.content_box {
+  width: 480px;
+  margin: 80px 90px;
+  float: left;
+}
+.content_wrap {
+  float: left;
+}
+.content_img {
+  width: 86px;
+  height: 75px;
+  float: left;
+}
+
+.content_wrap h2 {
+  margin-bottom: 20px;
+}
+.content_wrap p {
+  width: 370px;
+  padding-right: 55px;
+  box-sizing: border-box;
+  line-height: 25px;
+}

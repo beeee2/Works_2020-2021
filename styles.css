@@ -94,6 +94,20 @@ header h1 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.work-container .works > h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 28px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #02343f;
+  text-shadow: 2px 2px 3.9px rgba(2, 52, 63, 0.3);
+}
+.work-container .works > h2:nth-of-type(2),
+.work-container .works > h2:nth-of-type(3) {
+  margin-top: 150px;
+}
 .work-container .works article {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* 초기화작업 */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* img 태그에 vertical-align:top을 주면 웬만한 경우 중간으로 배치할 수 있다.*/
+/* text와 img를 그냥 한 줄에 넣으면 둘간의 높이가 어긋난다.
+이때 img태그에 vertical-align:top을 주면 텍스트와 높이가 일치하게 된다. 
+*/
+img {
+  vertical-align: top;
+}
+body {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 헤더 */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  /* fixed와 absolute 속성이 있다면 height:100%가 작동한다. 
+        그 외에 height:100%은 거의 먹히지 않는다고 함.
+    */
+  background-color: #0a174e;
+  color: white;
+}
+#header > h1 {
+  margin: 30px 0;
+  text-align: center;
+}
+.lnb {
+  width: 140px;
+  margin: 0 auto;
+}
+.lnb li {
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+.lnb > ul > li {
+  /* 딱 꼬집은 것, 멤버와 오더, 보드 */
+  margin-bottom: 20px;
+}
+.lnb .submenu a {
+  display: block;
+  color: gray;
+  font-size: 0.9em;
+}
+.lnb .submenu a:hover {
+  color: #f5d042;
+}
+.search_area {
+  width: 160px;
+  margin: 0 auto;
+}
+.search_area input[type="search"] {
+  display: block;
+  width: 100px;
+  height: 26px;
+  float: left;
+  background-color: gray;
+  border: 1px solid#ddd;
+  padding-left: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.search_area button {
+  display: block;
+  float: left;
+  height: 26px;
+  width: 60px;
+  background-color: #0a174e;
+  color: rgb(112, 110, 110);
+  border: 1px solid #ddd;
+  cursor: pointer;
+  /* button 또한 hover기능이 적용되는 것처람 하기 위해 cursor 속성을 이용한다. */
+  /* pointer를 사용함으로써 버튼 위에 마우스 커서가 갖다대졌을 시 손가락 모양으로 변하게 된다. */
+}
+
+/* 본문 */
+/* 화면 브라우저 100%를 사용 */
+#content {
+  /* 검은 바에 가려지지 않게 본문을 밀어줄 것, 마진 이용  */
+  margin-left: 200px;
+  background-color: #f5d042;
+  padding: 50px 80px;
+  height: 1000vh;
+}
+.main_visual {
+  /* 부모요소에따라 비율에 맞게 늘어날 수 있도록 px 아닌 %로 설정한다. */
+  width: 100%;
+  /* background-color: white;, visual 부분 확인 해보기  */
+  position: relative;
+  /* 이미지 width 속성으로 조정해주기 (아래)*/
+}
+.main_visual img {
+  width: 100%;
+  /* 부모요소에 따라 꽉 차게끔 하기 위해서 100%를 부여한다. */
+}
+.main_visual button {
+  /* 부모기준으로 가운데 정렬이 되어야 한다. */
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 35px);
+  border-radius: 50%;
+  border: 0;
+  /* 기본적으로 버튼은 테두리가 있기 때문에 border : 0을 적용한다. */
+  font-size: 20px;
+}
+.product {
+  overflow: hidden;
+  margin: 0 -20px;
+}
+.product li {
+  width: 25%;
+  /* 부모요소에서 4등분 된 값으로 설정되어있기때문에 li에 마진값을 주는 것이 아니라 li 하위의 a에 준다.
+    */
+  float: left;
+}
+.product li a {
+  display: block;
+  margin: 40px 20px 0;
+}
+.product li a img {
+  width: 100%;
+}

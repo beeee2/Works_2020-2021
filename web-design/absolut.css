@@ -1,0 +1,219 @@
+@charset "utf-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.blind {
+  text-indent: -9999em;
+}
+/* 헤더 */
+header {
+  width: 1320px;
+  height: 180px;
+  margin: 0 auto;
+  background-color: black;
+}
+h1 {
+  width: 250px;
+  height: 51px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+nav {
+  text-align: center;
+  color: rgb(192, 192, 192);
+}
+nav ul {
+  display: inline-block;
+}
+nav ul li {
+  float: left;
+  padding: 0 55px;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: brown;
+}
+/* 메인비주얼 */
+.main_visual {
+  width: 1320px;
+  margin: 0 auto;
+  height: 780px;
+  background: url(img/mainvisual.jpg) no-repeat center;
+}
+.main_visual .text {
+  text-align: center;
+  padding-top: 300px;
+}
+.main_visual .text span {
+  font-size: 6.2rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  color: white;
+}
+.main_visual .text p {
+  padding-top: 20px;
+  color: white;
+}
+.main_visual .text a {
+  display: block;
+  background-color: #ddd;
+  font-size: 15px;
+  width: 180px;
+  margin: 210px auto;
+  height: 40px;
+  line-height: 40px;
+}
+.main_visual .text a:hover {
+  box-shadow: 5px 5px 5px black;
+}
+/* 메인 */
+main {
+  width: 1320px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+main section:nth-of-type(1) h2 {
+  padding: 40px 0;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+main section:nth-of-type(1) p {
+  text-align: center;
+}
+main section:nth-of-type(1) {
+  padding-bottom: 40px;
+  border-bottom: 2px solid #ddd;
+}
+
+main section:nth-of-type(2) li {
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin: 20px 20px;
+  box-sizing: border-box;
+}
+main section:nth-of-type(2) li:hover {
+  box-shadow: 3px 3px 4px 2px rgb(180, 178, 178);
+}
+main section:nth-of-type(2) .button {
+  clear: both;
+  padding-top: 30px;
+}
+main section:nth-of-type(2) .button a {
+  display: block;
+  text-align: center;
+  background-color: black;
+  width: 210px;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 0 auto 80px;
+}
+main section:nth-of-type(2) .button a:hover {
+  box-shadow: 3px 3px 4px gray;
+}
+/* 배너 */
+.banner {
+  width: 1320px;
+  height: 240px;
+  margin: 0 auto;
+  background: url(img/fixedBg2.jpg) no-repeat center;
+  background-size: cover;
+}
+.banner .wrap {
+  padding: 40px 0;
+  width: 900px;
+  margin: 0 auto;
+}
+.banner span:nth-of-type(1) {
+  font-size: 2.5em;
+  color: white;
+  font-weight: bolder;
+}
+.banner span:nth-of-type(2) {
+  padding: 20px 0;
+  display: block;
+  color: white;
+}
+.banner .wrap a {
+  display: block;
+  background-color: white;
+  width: 145px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px 0;
+}
+.banner .wrap a:hover {
+  box-shadow: 3px 3px 5px 3px black;
+}
+
+main section:nth-of-type(3) {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 40px;
+}
+main section:nth-of-type(3) h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+main section:nth-of-type(3) li a {
+  float: left;
+  padding-top: 20px;
+  padding-left: 40px;
+  text-align: center;
+}
+main section:nth-of-type(3) li a:hover {
+  color: brown;
+}
+main section:nth-of-type(3) li a img {
+  width: 160px;
+}
+main section:nth-of-type(3) .button {
+  clear: both;
+  padding-top: 40px;
+}
+main section:nth-of-type(3) .button a {
+  display: block;
+  text-align: center;
+  background-color: black;
+  width: 210px;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 0 auto 80px;
+}
+main section:nth-of-type(2) .button a:hover {
+  box-shadow: 3px 3px 4px gray;
+}
+/* 꼬리 */
+footer {
+  width: 1320px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+footer small {
+}
